@@ -1,5 +1,4 @@
 import { Component } from "react";
-// import { useState, useEffect } from "react";
 import "./App.css";
 import PropTypes from "prop-types";
 import styled from "@emotion/styled";
@@ -108,7 +107,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:3000/intro-to-react-v2/pokemon.json")
+    fetch("http://localhost:3000/pokemon.json")
       .then((res) => res.json())
       .then((pokemon) => this.setState({ ...this.state, pokemon }));
   }
